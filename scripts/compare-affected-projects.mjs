@@ -1,10 +1,11 @@
 import { createRequire } from 'node:module';
+import { fileURLToPath } from 'node:url';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 
-const require = createRequire(import.meta.url);
 const repoRoot = new URL('..', import.meta.url);
-const rootPath = path.resolve(repoRoot.pathname);
+const rootPath = fileURLToPath(repoRoot);
+const require = createRequire(import.meta.url);
 const baselinePath = path.join(rootPath, 'scenarios', 'tsconfig.only-cdk-utils.json');
 const changedPath = path.join(rootPath, 'scenarios', 'tsconfig.with-prefix-false-positive.json');
 const { jsonDiff } = require('../node_modules/nx/dist/src/utils/json-diff.js');
