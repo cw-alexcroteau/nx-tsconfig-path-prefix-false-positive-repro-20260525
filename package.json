@@ -1,0 +1,11 @@
+{
+  "name": "nx-tsconfig-path-prefix-false-positive-repro",
+  "private": true,
+  "packageManager": "pnpm@11.2.2",
+  "scripts": {
+    "repro:compare-touched-projects": "node ./scripts/compare-affected-projects.mjs"
+  },
+  "devDependencies": {
+    "nx": "22.7.3"
+  }
+}

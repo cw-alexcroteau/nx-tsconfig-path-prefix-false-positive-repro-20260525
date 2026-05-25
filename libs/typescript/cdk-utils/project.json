@@ -1,0 +1,7 @@
+{
+  "name": "ts-cdk-utils",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/typescript/cdk-utils",
+  "projectType": "library",
+  "targets": {}
+}

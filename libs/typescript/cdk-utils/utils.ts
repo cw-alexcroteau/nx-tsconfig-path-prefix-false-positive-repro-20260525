@@ -1,0 +1,1 @@
+export const cdkUtilsValue = 'cdk-utils-value';

@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@proj/cdk-utils": ["libs/typescript/cdk-utils/index.ts"]
+    }
+  }
+}
